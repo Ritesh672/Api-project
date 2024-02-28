@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+#heading {
+    position: absolute;
+    left: 25%;
+    top: 1%;
+    width: 50%;
+    max-width: 90%;
+    font-size: 50px;
+    color: white;
+
+}
+
+h1{
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#image
+{
+    width: 90%;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+
+.image{
+   display: inline-block;
+   margin-left: 5%;
+   border-style:inset;
+   max-width: 90%;
+   max-height: 80%;
+   border-radius: 25px;
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.image:hover{
+    border-style: inset;
+    border-radius: 25px;
+    box-shadow: inset 20px 20px 20px 20px lightgrey;
+}
+
+h3{
+    color: white;
+}
+
+button{
+    background-color: white;
+    width: 6%;
+    height: 5%;
+    position: absolute;
+    bottom: 1%;
+    left: 42%;
+}
+
+#click-me {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    text-align: center;
+}
+
+
+
+
+
