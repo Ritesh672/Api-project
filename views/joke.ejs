@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/api.css">
+    <title>Joke page</title>
 </head>
 <body>
 
+    <header>
+        <%- include('partials/header.ejs') %>
+    </header>
+    
 
     <main>
         <div>
-            <% if (locals.joke) {%>
-            <h1><%= joke %></h1>
-            <% } else { %>
-            <h1>press the button to get a joke</h1>
-            <% } %>
+            <h1>hers the joke</h1>
+           
+            <% if (locals.data) { %>
+                <h1><%= data %></h1>
+                <% } %>
         </div>
-
-        <form action="/joke" method="post">
-            <button type="submit">Click me</button>
-        </form>
     </main>
-    
+
+
+    <footer>
+        <%- include('partials/footer.ejs') %>
+    </footer>
+
+   
 </body>
 </html>

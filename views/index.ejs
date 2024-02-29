@@ -4,45 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        
+        <%- include('partials/header.ejs') %>
     </header>
 
+
     <main>
+        <div>
+            <h3>tell me a joke</h3>
+            <form action="/joke" method="post">
+                <button type="submit">submit</button>
+            </form>
+         
+        </div>
 
-        <section>
-            <div id="heading">
-                <h1>pick a card</h1>
-               
-            </div>
-        </section>
 
-        <section>
-            <div id="image">
-
-                <div class="image" id="image-1">
-                    <img src="image/background.png" alt="background image">
-                </div>
-                <div id="image-2" class="image">
-                    <img src="image/background.png" alt="background image">
-                </div>
-                <div id="image-3" class="image">
-                    <img src="image/background.png" alt="background image">    
-                </div> 
-
-                
-            </div>
-
-    
-        </section>
+        <div>
+            <h3>to check the weather</h3>
+            <form action="/weather" method="post">
+                <button type="submit">submit</button>
+            </form>
+        </div>
     </main>
 
+
     <footer>
-        <form action="/joke" method="post">
-            <button type="submit">submit</button>
-        </form>
+        <%- include('partials/footer.ejs') %>
     </footer>
 </body>
 </html>
